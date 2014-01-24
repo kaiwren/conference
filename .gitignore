@@ -35,3 +35,4 @@
 .rvmrc
 .ruby-gemset
 .ruby-version
+.idea/*
