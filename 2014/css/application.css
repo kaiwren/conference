@@ -1241,30 +1241,34 @@ header h3 a:hover {
 nav, .page nav {
   display: block;
   position: absolute;
-  text-align: center;
-  margin: 0;
+  text-align: left;
+  margin: 1%;
   top: 5px;
   left: 0;
   right: 0;
 }
 /* line 10, ../scss/modules/_nav.scss */
+nav a#pull, .page nav a#pull {
+  display: none;
+}
+/* line 14, ../scss/modules/_nav.scss */
 nav ul, .page nav ul {
-  display: inline-block;
   margin: 0;
   padding: 0;
+  width: 27%;
+  list-style: none;
 }
-/* line 15, ../scss/modules/_nav.scss */
+/* line 20, ../scss/modules/_nav.scss */
 nav ul li, .page nav ul li {
-  display: inline-block;
   position: relative;
   margin: 0 0 0 0;
   padding: 0 8px 0 0;
 }
-/* line 21, ../scss/modules/_nav.scss */
+/* line 25, ../scss/modules/_nav.scss */
 nav ul li:before, .page nav ul li:before {
   display: none;
 }
-/* line 23, ../scss/modules/_nav.scss */
+/* line 27, ../scss/modules/_nav.scss */
 nav ul li a, .page nav ul li a {
   color: white;
   display: block;
@@ -1272,12 +1276,39 @@ nav ul li a, .page nav ul li a {
   text-transform: lowercase;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
-/* line 30, ../scss/modules/_nav.scss */
+/* line 34, ../scss/modules/_nav.scss */
 nav ul li a:hover, .page nav ul li a:hover {
   border-bottom: none;
   text-shadow: 1px 1px 1px white;
 }
 
+@media only screen and (max-width: 600px) {
+  /* line 48, ../scss/modules/_nav.scss */
+  nav {
+    width: 50%;
+  }
+
+  /* line 52, ../scss/modules/_nav.scss */
+  nav ul {
+    display: none;
+    width: 100%;
+  }
+
+  /* line 57, ../scss/modules/_nav.scss */
+  nav a#pull {
+    display: inline;
+  }
+
+  /* line 61, ../scss/modules/_nav.scss */
+  nav:hover {
+    background-color: rgba(45, 164, 204, 0.95);
+    border-radius: 2%;
+  }
+  /* line 64, ../scss/modules/_nav.scss */
+  nav:hover ul {
+    display: block;
+  }
+}
 /* line 2, ../scss/pages/_home.scss */
 .home h1 {
   width: 100%;

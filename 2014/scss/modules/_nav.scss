@@ -1,19 +1,23 @@
 nav, .page nav{
   display: block;
   position: absolute;
-  text-align: center;
-  margin: 0;
+  text-align: left;
+  margin: 1%;
   top: 5px;
   left: 0;
   right: 0;
 
+  a#pull{
+    display: none;
+  }
+
   ul{
-    display: inline-block;
     margin: 0;
     padding: 0;
+    width: 27%;
+    list-style: none;
 
     li{
-      display: inline-block;
       position: relative;
       margin: 0 0 0 0;
       padding: 0 8px 0 0;
@@ -37,4 +41,28 @@ nav, .page nav{
 
   }
 
+}
+
+@media only screen and (max-width: 600px) {
+
+  nav {
+    width: 50%;
+  }
+
+  nav ul {
+    display: none;
+    width: 100%;
+  }
+
+  nav a#pull {
+    display: inline;
+  }
+
+  nav:hover {
+    background-color: $blue-sea;
+    border-radius: 2%;
+    ul {
+      display: block;
+    }
+  }
 }
