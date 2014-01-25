@@ -1266,16 +1266,16 @@ nav ul li:before, .page nav ul li:before {
 }
 /* line 23, ../scss/modules/_nav.scss */
 nav ul li a, .page nav ul li a {
-  color: white;
+  color: #aa0000;
   display: block;
   padding: 0 10px;
   text-transform: lowercase;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
 }
 /* line 30, ../scss/modules/_nav.scss */
 nav ul li a:hover, .page nav ul li a:hover {
   border-bottom: none;
-  text-shadow: 1px 1px 1px white;
+  text-shadow: 1px 1px 1px rgba(149, 0, 0, 0.5);
 }
 
 /* line 2, ../scss/pages/_home.scss */
